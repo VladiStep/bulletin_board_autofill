@@ -1,0 +1,74 @@
+#extensionTitle {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+hr {
+    margin-block-end: 18px;
+}
+
+#cont {
+    margin: 16px;
+}
+
+label {
+    font-size: 14px;
+}
+#presetsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+#presetsDiv * {
+    margin-right: 3px;
+}
+#presetsDiv label {
+    align-self: center;
+}
+#buttonsDiv {
+    padding-top: 4px;
+    display: flex;
+    flex-basis: 100%;
+}
+#removePresetButton {
+    color: red;
+}
+#removePresetButton[disabled] {
+    color: indianred;
+}
+
+#fieldsTable {
+    padding: 8px 16px 8px 8px;
+    border: black;
+    border-style: outset;
+    border-width: thin;
+}
+tr {
+    margin: 2px;
+}
+td {
+    white-space: nowrap;
+}
+textarea {
+    resize: none;
+    padding-right: 4px;
+}
+select {
+    height: 21px;
+}
+
+#enterButton {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    margin-top: 3px;
+}
+#enterButton b {
+    font-size: 16px;
+}
+
+.fitWidth {
+    width: 100%;
+    min-width: 100%;
+}

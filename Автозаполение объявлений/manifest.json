@@ -1,0 +1,22 @@
+{
+    "name": "Автозаполнение объявлений",
+    "description": "Расширение для автозаполнения полей объявлений.",
+    "version": "1.8",
+    "manifest_version": 3,
+    "permissions": ["storage", "activeTab", "scripting", "unlimitedStorage"],
+    "host_permissions": ["http://*/*", "https://*/*"],
+    "action": {
+	    "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "fillAll": {
+            "suggested_key": {
+                "default": "Alt+Insert"
+            },
+            "description": "Заполнить все поля без открытия окна расширения."
+        }
+    }
+}

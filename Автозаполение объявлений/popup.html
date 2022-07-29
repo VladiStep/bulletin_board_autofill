@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" href="popup.css">
+    </head>
+    <body>
+        <div id="extensionTitle">Автозаполнение объявлений</div>
+        <hr>
+		<div id="cont">
+			<div id="presetsDiv">
+				<label for="presets">Набор: </label>
+				<select id="presets">
+					<option>Набор 1</option>
+				</select>
+				<div id="buttonsDiv">
+					<button id="addPresetButton">Добавить</button>
+					<button id="renamePresetButton">Переименовать</button>
+					<button id="removePresetButton" disabled>Удалить</button>
+				</div>
+			</div>
+			<table id="fieldsTable">
+				<colgroup>
+					<col>
+					<col style="min-width: 220px; width: 220px;">
+				</colgroup>
+                <tbody>
+                    <tr>
+                        <td>ФИО:</td>
+                        <td><input id="fioField" class="fitWidth" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Контактная<br>
+                            информация:</td>
+                        <td><input id="contactField" class="fitWidth" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Телефон:</td>
+                        <td><input id="phoneField" class="fitWidth" type="tel"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input id="emailField" class="fitWidth" type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Сайт:</td>
+                        <td><input id="websiteField" class="fitWidth" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Заголовок:</td>
+                        <td><input id="headerField" class="fitWidth" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Текст:</td>
+                        <td><textarea id="textField" class="fitWidth" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Город:</td>
+                        <td><input id="cityField" class="fitWidth" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Регион:</td>
+                        <td><input id="regionField" class="fitWidth" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Адрес:</td>
+                        <td><input id="addressField" class="fitWidth" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Организация:</td>
+                        <td><input id="orgField" class="fitWidth" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Цена:</td>
+                        <td><input id="priceField" class="fitWidth" type="number" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td>Тип:</td>
+                        <td>
+                            <select id="typeSelect">
+                                <option value="face">Частное лицо</option>
+                                <option value="org">Организация</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+			</table>
+            <button id="enterButton">
+            <b>Заполнить поля</b><br>
+            (Alt + Ins<i>ert</i>)
+            </button>
+            
+			<script src="popup.js"></script>
+		</div>
+    </body>
+</html>
